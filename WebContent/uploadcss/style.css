@@ -1,0 +1,562 @@
+/*--- Reset Code ---*/
+body {
+    font-family: Calibri;
+    background: #F2FBFA;
+}
+body a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+input[type="button"],input[type="submit"]{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;			   
+}	
+p{
+	margin:0;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+/*--- Reset Code ---*/
+
+/*-- Fonts --*/
+@font-face{
+	font-family: 'ClementePDaq-UltraBold';
+	src:url(../fonts/ClementePDaq-UltraBold.ttf) format('truetype');
+}
+@font-face{
+    font-family: 'Calibri';
+    src:url(../fonts/Calibri.ttf) format('truetype');
+}
+/*-- Fonts --*/
+
+/*--- Style ---*/
+
+.clear {
+    clear: both;
+}
+
+h1 {
+    text-align: center;
+    font-family: ClementePDaq-UltraBold;
+	margin-top: 30px;
+	font-weight: bold;
+    color: #0099E5;
+}
+
+.upload {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #5ebfef;
+    padding: 3px;
+    border-radius: 3px
+}
+
+#drop a {
+    background: #0099e5 url("../images/up.png") no-repeat 25px;
+    padding: 30px 0px;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: calibri;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #5ebfef;
+    border-radius: 3px;
+}
+#drop a:hover {
+	
+}
+
+
+#drop input{
+    display:none;
+}
+
+#upload ul{
+}
+
+#upload ul li{
+    padding: 0 0px;
+    height: 79px;
+    position: relative;
+    list-style-type: none;
+    clear: both;
+    overflow: hidden;
+    background-color: #3E4142;
+    border-bottom: 1px solid #5ebfef;
+    border-radius: 3px;
+}
+
+#upload ul li input{
+    display: none;
+}
+
+#upload ul li p{
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+
+#upload ul li i{
+    font-weight: normal;
+    font-style:normal;
+    color:#7f7f7f;
+    display:block;
+}
+
+#upload ul li canvas{
+    top: 15px;
+    left: 10px;
+    position: absolute;
+}
+
+#upload ul li span{
+    width: 15px;
+    height: 12px;
+    background: url('../images/icons.png') no-repeat;
+    position: absolute;
+    top: 34px;
+    right: 33px;
+    cursor:pointer;
+}
+
+#upload ul li.working span{
+    height: 16px;
+    background-position: 0 -12px;
+}
+
+#upload ul li.error p{
+    color:red;
+}
+
+
+.upload span {
+    color: #F1F1F1;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    display: block;
+    letter-spacing: 2px;
+}
+.checkbox {
+    margin-bottom: 4px;
+    padding-left: 27px;
+    line-height: 27px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1em;
+    color: #2d2d2d;
+}
+.checkbox i {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: 2px solid #5f8b9e;
+}
+.checkbox input:checked + i:after {
+    opacity: 1;
+}
+.checkbox input + i:after {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    -ms-transition: opacity 0.1s;
+    -moz-transition: opacity 0.1s;
+    -webkit-transition: opacity 0.1s;
+}
+.checkbox input + i:after {
+    content: '';
+    background: url("../images/tick1.png") no-repeat 1px 2px;
+    top: -1px;
+    left: -1px;
+    width: 15px;
+    height: 15px;
+    font: normal 12px/16px FontAwesome;
+    text-align: center;
+}
+.checkbox input {
+    position: absolute;
+    left: -9999px;
+}
+
+.button {
+    text-align: center;
+    padding: 20px 0;
+}
+.button .cancel a {
+    float: left;
+    width: 25%;
+    background-color: #DC5151;
+    border: none;
+    color: #FFF;
+    padding: 11px 0px;
+    border-radius: 3px;
+    color: #FFF;
+    font-family: calibri;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.button .cancel a:hover {
+    background-color: #F33737;
+}
+.button .done a {
+    float: right;
+    width: 25%;
+    background-color: #0259A0;
+    border: none;
+    padding: 11px 0px;
+    border-radius: 3px;
+    color: #FFF;
+    font-family: calibri;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.button .done a:hover {
+    background-color: #0D9437;
+}
+/*--- Style ---*/
+
+/*-- Responsive - Design --*/
+
+@media screen and (max-width: 1920px) {
+    h1 {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+	.upload {
+		margin-top: 200px;
+	}
+	#drop a {
+		padding: 40px 0px;
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 1680px) {
+    h1 {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+	.upload {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    h1 {
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .upload {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    h1 {
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .upload {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+		font-size: 50px;
+		margin-top: 30px;
+	}
+	.upload {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+    h1 {
+        font-size: 40px;
+    }
+	.upload {
+		margin-top: 10px;
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+    h1 {
+        font-size: 40px;
+    }
+    .upload {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .upload {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 966px) {
+
+}
+
+@media screen and (max-width: 900px) {
+	.upload {
+		margin-top: 10px;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	h1 {
+		font-size: 45px;
+	}
+    .upload {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        margin-top: 30px;
+        font-size: 35px;
+    }
+    .upload {
+		width: 55%;
+		margin-top: 10px;
+		padding: 3px;
+	}
+}
+
+@media screen and (max-width: 736px) {
+    h1 {
+		margin-top: 30px;
+		font-size: 35px;
+	}
+    .upload {
+        width: 55%;
+        margin-top: 100px;
+    }
+    .button .cancel {
+        padding: 7px 0px;
+    }
+    .button .done {
+        padding: 7px 0px;
+        margin-top: -12px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    h1 {
+		margin-top: 30px;
+		font-size: 35px;
+	}
+    .upload {
+		width: 60%;
+		margin-top: 80px;
+	}
+    .button .cancel {
+        padding: 7px 0px;
+    }
+    .button .done {
+        padding: 7px 0px;
+        margin-top: -12px;
+    }
+}
+
+@media screen and (max-width: 603px) {
+    h1 {
+		margin-top: 30px;
+		font-size: 40px;
+	}
+	.upload {
+		width: 60%;
+		margin-top: 70px;
+        padding: 3px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		margin-top: 30px;
+		font-size: 40px;
+	}
+	.upload {
+		width: 60%;
+		margin-top: 70px;
+        padding: 3px;
+	}
+}
+
+@media screen and (max-width: 568px) {
+    h1 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+	.upload {
+		width: 65%;
+		margin-top: 70px;
+		padding: 3px;
+	}
+    .button .cancel {
+        padding: 7px 0px;
+    }
+    .button .done {
+        padding: 7px 0px;
+        margin-top: -12px;
+    }
+}
+
+@media screen and (max-width: 533px) {
+	h1 {
+		margin-top: 20px;
+		font-size: 40px;
+	}
+	.upload {
+		width: 65%;
+		margin-top: 100px;
+		padding: 3px;
+	}
+	
+}
+
+@media screen and (max-width: 414px) {
+    h1 {
+		margin-top: 20px;
+		font-size: 35px;
+	}
+    .upload {
+		width: 85%;
+		margin-top: 100px;
+	}
+
+}
+
+@media screen and (max-width: 384px) {
+    h1 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    #drop a {
+    	background: #0099e5 url("../images/up.png") no-repeat 15px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+    .upload {
+		width: 95%;
+		margin-top: 100px;
+	}
+    #drop a {
+    	background: #0099e5 url("../images/up.png") no-repeat 15px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .upload {
+        width: 95%;
+        padding: 3px;
+        margin-top: 80px;
+    }
+    #upload ul li p {
+        width: 140px;
+    }
+    #drop a {
+    	background: #0099e5 url("../images/up.png") no-repeat 15px;
+	}
+    #drop a:hover {
+        background-color: #0099e5;
+    }
+    .button .cancel {
+        padding: 6px 0px;
+    }
+    .button .done {
+        padding: 6px 0px;
+        margin-top: -12px;
+    }
+
+}
+
+@media screen and (max-width: 240px) {
+    h1 {
+		font-size: 23px;
+		margin-top: 50px;
+	}
+	.upload {
+		width: 95%;
+		padding: 3px;
+		margin-top: 60px;
+	}
+	#drop a {
+		background: #0099e5 url("../images/up.png") no-repeat 8px;
+		padding: 25px 0px;
+		font-size: 20px;
+		letter-spacing: 0px;
+	}
+    .button .cancel {
+		width: 115%;
+        padding: 6px 0px;
+        margin-left: 10px;
+    }
+    .button .done {
+		width: 115%;
+        padding: 6px 0px;
+        margin-right: -110px;
+    }
+}
+
+/*-- Responsive - Design --*/

@@ -1,0 +1,2 @@
+# DiplomaProject
+A university project
